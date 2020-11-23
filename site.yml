@@ -1,0 +1,18 @@
+- name: Sleep and print
+  hosts: localhost
+  gather_facts: no
+  tags: always
+  vars:
+      ansible_connection: local
+  tasks:
+    - name: PRINT DEBUG MESSAG
+      debug:
+        msg: "THIS IS TEST MESSAGE"
+
+    - name: ZZzzzZZZZZ
+      pause:
+        seconds: 45
+
+    - name: ZZzzzZZZZZ
+      debug:
+        msg: "We done good bye"
